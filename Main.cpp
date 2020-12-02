@@ -49,7 +49,7 @@ int check(vector<string> board, int width, int height) {
 
 int main() {
 	ios::sync_with_stdio(false);
-
+	
 	int N, M;
 	cin >> N >> M;
 	vector<string> board;
@@ -68,7 +68,7 @@ int main() {
 			tmp_change = check(board, width, height);
 			if (tmp_change < change) change = tmp_change;
 		}
-
+		
 	}
 
 	cout << change << endl;
