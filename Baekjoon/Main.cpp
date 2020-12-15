@@ -4,78 +4,56 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include <climits>
+#include <cmath>
 
 using namespace std;
-
-bool compare(long long a, long long b) {
-	return a > b;
-}
 
 int main() {
 	ios::sync_with_stdio(0);
 
-	int N;
+	int N;			// Number of players
 	cin >> N;
-	vector<long long> A;
+
+	bool select[20] = { 0 };
+	int stats[20][20] = { 0 };
+
 	for (int i = 0; i < N; i++) {
-		long long tmp;
-		cin >> tmp;
-		A.push_back(tmp);
-	}
-	vector<long long> vec_res;
-	vector<int> op;			// operator
-	for (int i = 0; i < 4; i++) {
-		int tmp;
-		cin >> tmp;
-		switch (i) {
-		case(0):
-			for (int j = 0; j < tmp; j++) {
-				op.push_back(i);
-			}
-			break;
-		case(1):
-			for (int j = 0; j < tmp; j++) {
-				op.push_back(i);
-			}
-			break;
-		case(2):
-			for (int j = 0; j < tmp; j++) {
-				op.push_back(i);
-			}
-			break;
-		case(3):
-			for (int j = 0; j < tmp; j++) {
-				op.push_back(i);
-			}
-			break;
+		for (int j = 0; j < N; j++) {
+			cin >> stats[i][j];
 		}
 	}
 
+	// 조합 생성을 위한 배열 초기화 => nCn/2
+	for (int i = 0; i < N / 2; i++) {
+		select[i] = 1;
+	}
+
+	// 선수 등번호
+	int number[20];
+	int min = INT_MAX;
 	do {
-		long long result = A[0];
-		for (int i = 1; i < A.size(); i++) {
-			switch (op[i - 1]) {
-			case(0):
-				result += A[i];
-				break;
-			case(1):
-				result -= A[i];
-				break;
-			case(2):
-				result *= A[i];
-				break;
-			case(3):
-				result /= A[i];
-				break;
+		for (int i = 0, s = 0, l = N / 2; i < N; i++) {
+			if (select[i]) number[s++] = i;
+			else number[l++] = i;
+		}
+		
+		int start = 0; int link = 0;
+		for (int i = 0; i < N / 2 - 1; i++) {
+			for (int j = i + 1; j < N / 2; j++) {
+				start += stats[number[i]][number[j]] + stats[number[j]][number[i]];
+				link += stats[number[i + N / 2]][number[j + N / 2]] + stats[number[j + N / 2]][number[i + N / 2]];
 			}
 		}
-		vec_res.push_back(result);
-	} while (next_permutation(op.begin(), op.end()));
+		int diff = abs(start - link);
+		if (diff == 0) {
+			cout << 0 << '\n';
+			return 0;
+		}
+		if (diff < min) min = diff;
+	} while (prev_permutation(select, select + N));
 
-	sort(vec_res.begin(), vec_res.end(), compare);
-
-	cout << vec_res[0] << '\n';
-	cout << vec_res[vec_res.size() - 1] << '\n';
+	cout << min << '\n';
 
 	return 0;
 }
