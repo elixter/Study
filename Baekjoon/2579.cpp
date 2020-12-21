@@ -1,4 +1,4 @@
-//// ¹éÁØ ¾Ë°í¸®Áò 2579¹ø °è´Ü ¿À¸£±â
+//// ë°±ì¤€ ì•Œê³ ë¦¬ì¦˜ 2579ë²ˆ ê³„ë‹¨ ì˜¤ë¥´ê¸°
 //#define _CRT_SECURE_NO_WARNINGS
 //
 //#include <string>
@@ -35,7 +35,7 @@
 //	for (int i = 3; i <= N; i++) {
 //		dp[i] = max(dp[i - 2] + stairs[i], dp[i - 3] + stairs[i - 1] + stairs[i]);
 //	}
-//
+// 
 //	cout << dp[N] << '\n';
 //
 //	return 0;
