@@ -15,27 +15,32 @@ int max(const int a, const int b) {
 	else return b;
 }
 
+int tri[500][500] = { 0 };
+int dp[500][500] = { 0 };
+
 int main() {
 	ios::sync_with_stdio(0);
 
-	int N;			// Number of players
+	int N;
 	cin >> N;
-	int stairs[301] = { 0 };
-	int dp[301] = { 0 };
-	
-	
-	for (int i = 1; i <= N; i++) {
-		cin >> stairs[i];
+
+
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j <= i; j++) {
+			cin >> tri[i][j];
+			if (i == N - 1) {
+				dp[i][j] = tri[i][j];
+			}
+		}
 	}
 
-	dp[1] = stairs[1];
-	dp[2] = stairs[1] + stairs[2];
-
-	for (int i = 3; i <= N; i++) {
-		dp[i] = max(dp[i - 2] + stairs[i], dp[i - 3] + stairs[i - 1] + stairs[i]);
+	for (int i = N - 2; i >= 0; i--) {
+		for (int j = i; j >= 0; j--) {
+			dp[i][j] = tri[i][j] + max(dp[i + 1][j], dp[i + 1][j + 1]);
+		}
 	}
 
-	cout << dp[N] << '\n';
+	cout << dp[0][0] << '\n';
 
 	return 0;
 }
