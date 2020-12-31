@@ -7,44 +7,52 @@
 #include <climits>
 #include <cmath>
 #include <unordered_set> 
+#include <map>
+#include <unordered_map>
+#include <utility>
+#include <stack>
 
 using namespace std;
 
-int max(const int a, const int b) {
-	if (a > b) return a;
-	else return b;
+void search(bool field[][52], int x, int y) {
+	if (field[y][x]) {
+		field[y][x] = false;
+		search(field, x - 1, y);
+		search(field, x + 1, y);
+		search(field, x, y + 1);
+		search(field, x, y - 1);
+	}
 }
 
-long long dp[101][10] = { 0 };
-
-#define MOD 1000000000
-
 int main() {
+	cin.tie(NULL);
 	ios::sync_with_stdio(0);
 
-	int N; 
-	cin >> N;
-
-	for (int i = 1; i < 10; i++) {
-		dp[1][i] = 1;
-	}
-	dp[2][0] = 1, dp[2][1] = 1, dp[2][2] = 2, dp[2][3] = 2, dp[2][4] = 2, dp[2][4] = 2,
-		dp[2][5] = 2, dp[2][6] = 2, dp[2][7] = 2, dp[2][8] = 2, dp[2][9] = 1;
-
-	for (int i = 3; i <= N; i++) {
-		dp[i][0] = dp[i - 1][1] % MOD;
-		dp[i][9] = dp[i - 1][8] % MOD;
-		for (int j = 1; j <= 8; j++) {
-			dp[i][j] = (dp[i - 1][j - 1] + dp[i - 1][j + 1]) % MOD;
-		}
-	}
+	int T, N, M, K;
+	cin >> T;
 	
-	long long result = 0;
-	for (int i = 0; i < 10; i++) {
-		result += dp[N][i];
-	}
+	for (int test_case = 1; test_case <= T; test_case++) {
+		cin >> M >> N >> K;
+		bool field[52][52] = { false };
+		int count = 0;
 
-	cout << result % MOD << '\n';
+		// 배추의 위치 입력
+		for (int i = 0; i < K; i++) {
+			int x, y;
+			cin >> x >> y;
+			field[y + 1][x + 1] = true;
+		}
+
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				if (field[i + 1][j + 1]) {
+					search(field, j + 1, i + 1);
+					count++;
+				}
+			}
+		}
+		cout << count << '\n';
+	}
 
 	return 0;
 }
