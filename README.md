@@ -15,7 +15,8 @@
   + <a href="https://github.com/elixter/Study/blob/main/Baekjoon/1074.cpp">source</a>
 - <a href="https://drive.google.com/file/d/13o5GrjSIfV9vfUQlNVdFCUyodKNmt3Ws/view?usp=sharing" target="_blank">1389 케빈 베이컨의 6단계 법칙</a>
   + <a href="https://github.com/elixter/Study/blob/main/Baekjoon/1389.cpp">source</a>
-
+- <a href="https://drive.google.com/file/d/13tA5zPpZEXegfZXdRiSmlfD1FBhUaTd_/view?usp=sharing" target="_blank">16953 A → B</a>
+  + <a href="https://github.com/elixter/Study/blob/main/Baekjoon/16953.cpp">source</a>
 --------------------------------------------------------------------------
 
 # <a href="https://github.com/elixter/Study/tree/main/algorithm">algorithm</a>
