@@ -17,6 +17,8 @@
   + <a href="https://github.com/elixter/Study/blob/main/Baekjoon/1389.cpp">source</a>
 - <a href="https://drive.google.com/file/d/13tA5zPpZEXegfZXdRiSmlfD1FBhUaTd_/view?usp=sharing" target="_blank">16953 A → B</a>
   + <a href="https://github.com/elixter/Study/blob/main/Baekjoon/16953.cpp">source</a>
+- <a href="https://drive.google.com/file/d/14rfD3zN1Ih9_syzsmjXHokpQ3y71a7qA/view?usp=sharing" target="_blank">2248 이진수 찾기</a>
+  + <a href="https://github.com/elixter/Study/blob/main/Baekjoon/2248.cpp">source</a>
 --------------------------------------------------------------------------
 
 # <a href="https://github.com/elixter/Study/tree/main/algorithm">algorithm</a>
