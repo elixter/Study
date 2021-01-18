@@ -23,3 +23,5 @@
 
 # <a href="https://github.com/elixter/Study/tree/main/algorithm">algorithm</a>
 - 알고리즘 공부하면서 정리한 내용들.
+- Github markdown에 LaTeX 수식이 입력이 안되어서 대신 Notion링크로 대체함.
+- <a href="https://www.notion.so/Floyd-s-Algorithm-for-shortest-paths-73a8304cb0fa40e89ed930cd03762f65">Dynamic programming(Floyd's algorithm for shortest path)</a>
