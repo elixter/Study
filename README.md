@@ -31,5 +31,5 @@
 ----------------------------------------------------------------------------
 
 # JS공부중
-- <a href="https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2">이거</a> 보면서 공부중. (풀스택하면 멋있을거같아서 공부중)
-- <a href="https://www.notion.so/682ec95c4c5d4fafbf92c1a379935ac6">Notion</a>
+- <a href="https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2" target="_blank">이거</a> 보면서 공부중. (풀스택하면 멋있을거같아서 공부중)
+- <a href="https://www.notion.so/682ec95c4c5d4fafbf92c1a379935ac6" target="_blank">Notion</a>
