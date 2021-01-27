@@ -19,9 +19,17 @@
   + <a href="https://github.com/elixter/Study/blob/main/Baekjoon/16953.cpp">source</a>
 - <a href="https://drive.google.com/file/d/14rfD3zN1Ih9_syzsmjXHokpQ3y71a7qA/view?usp=sharing" target="_blank">2248 이진수 찾기</a>
   + <a href="https://github.com/elixter/Study/blob/main/Baekjoon/2248.cpp">source</a>
+  
 --------------------------------------------------------------------------
 
 # <a href="https://github.com/elixter/Study/tree/main/algorithm">algorithm</a>
 - 알고리즘 공부하면서 정리한 내용들.
 - Github markdown에 LaTeX수식 입력이 안되어서 Notion링크로 대체함.
 - <a href="https://www.notion.so/Floyd-s-Algorithm-for-shortest-paths-73a8304cb0fa40e89ed930cd03762f65">Dynamic programming(Floyd's algorithm for shortest path)</a>
+
+
+----------------------------------------------------------------------------
+
+# JS공부중
+- <a href="https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2">이거</a> 보면서 공부중. (풀스택하면 멋있을거같아서 공부중)
+- <a href="https://www.notion.so/682ec95c4c5d4fafbf92c1a379935ac6">Notion</a>
