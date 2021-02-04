@@ -17,7 +17,7 @@
 
 using namespace std;
 
-// ¹®ÀÚ¿­ÀÇ ÃÖ´ë ±æÀÌ.
+// ë¬¸ìì—´ì˜ ìµœëŒ€ ê¸¸ì´.
 constexpr int MAX_LEN = 2500;
 
 class KMP {
@@ -32,10 +32,11 @@ public:
     inline string getP() { return _p; }
     inline int getHitCount() { return _hitCnt; }
     inline vector<int> getIndexVec() { return _idx; }
+    inline int* getFailFunction() { return _failFunction; }
     inline void setS(string s) { _s = s; }
     inline void setP(string p) { _p = p; }
 
-    // ÆĞÅÏÀ» Ã£Àº È½¼ö, ÆĞÅÏÀÇ index vector, ½ÇÆĞÇÔ¼ö¸¦ ÃÊ±âÈ­ÇÏ´Â ÇÔ¼ö.
+    // íŒ¨í„´ì„ ì°¾ì€ íšŸìˆ˜, íŒ¨í„´ì˜ index vector, ì‹¤íŒ¨í•¨ìˆ˜ë¥¼ ì´ˆê¸°í™”í•˜ëŠ” í•¨ìˆ˜.
     void clear() {
         _hitCnt = 0;
         _idx.clear();
@@ -51,7 +52,7 @@ public:
         }
     }
 
-    // ÆĞÅÏÃ£±â
+    // íŒ¨í„´ì°¾ê¸°
     void run() {
         int j = 0;
         for (int i = 0; i < _s.length(); i++) {
@@ -67,14 +68,14 @@ public:
         }
     }
 
-    // Áßº¹À» ÇÇÇÒ °æ¿ìÀÇ ÆĞÅÏ Ã£±â
+    // ì¤‘ë³µì„ í”¼í•  ê²½ìš°ì˜ íŒ¨í„´ ì°¾ê¸°
     void notOverlapRun() {
         int j = 0;
         for (int i = 0; i < _s.length(); i++) {
             while (j > 0 && _s[i] != _p[j]) j = _failFunction[j - 1];
             if (_s[i] == _p[j]) {
                 if (j == _p.length() - 1) {
-                    // Áßº¹À» ÇÇÇÒ °æ¿ì ÆĞÅÏÀ» Ã£À¸¸é ´Ù½Ã ÆĞÅÏÀÇ Ã³À½ indexºÎÅÍ °°Àº ÆĞÅÏÀ» Ã£¾Æ°£´Ù.
+                    // ì¤‘ë³µì„ í”¼í•  ê²½ìš° íŒ¨í„´ì„ ì°¾ìœ¼ë©´ ë‹¤ì‹œ íŒ¨í„´ì˜ ì²˜ìŒ indexë¶€í„° ê°™ì€ íŒ¨í„´ì„ ì°¾ì•„ê°„ë‹¤.
                     _idx.push_back(i - _p.size() + 1);
                     _hitCnt++;
                     j = 0;
