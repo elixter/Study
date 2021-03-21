@@ -33,3 +33,9 @@
 # JS공부중
 - <a href="https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2" target="_blank">이거</a> 보면서 공부중. (풀스택하면 멋있을거같아서 공부중)
 - <a href="https://www.notion.so/682ec95c4c5d4fafbf92c1a379935ac6" target="_blank">Notion</a>
+
+----------------------------------------------------------------------------
+
+# 시스템프로그래밍
+- 학교 전공수업
+- <a href="https://www.notion.so/a1ad80d00a6b428a857356c0a78951ad" target="_blank">Notion</a>
