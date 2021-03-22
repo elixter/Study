@@ -39,3 +39,4 @@
 # 시스템프로그래밍
 - 학교 전공수업
 - <a href="https://www.notion.so/a1ad80d00a6b428a857356c0a78951ad" target="_blank">Notion</a>
+.
