@@ -1,3 +1,5 @@
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Felixter%2FStudy&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)    
 나의 작은 공부레포
 
 - 백준 풀이하면서 끄적인 삼성노트 업로드 시작(20210105) 문제별 링크들어가면 구글 드라이브에 업로드된 삼성노트 PDF파일로 이동함.
