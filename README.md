@@ -42,3 +42,9 @@
 - 학교 전공수업
 - <a href="https://www.notion.so/a1ad80d00a6b428a857356c0a78951ad" target="_blank">Notion</a>
 .
+
+----------------------------------------------------------------------------
+
+# 컴퓨터 네트워크
+- 학교 전공수업
+- <a href="https://www.notion.so/ec7211f39c5646e59ed6059b2ac12fa6" target="_blank">Notion</a>
