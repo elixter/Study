@@ -126,4 +126,3 @@ private:
 	int _len;			// Capacity of queue + 2.
 	T* _h;				// Element array.
 };
-
