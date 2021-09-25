@@ -43,3 +43,9 @@
 # 컴퓨터 네트워크
 - 학교 전공수업
 - <a href="https://www.notion.so/ec7211f39c5646e59ed6059b2ac12fa6" target="_blank">Notion</a>
+
+
+----------------------------------------------------------------------------
+# 운영체제
+- 면접대비를 위한 운영체제 복습중
+- <a href="https://false-twill-cef.notion.site/Processes-and-threads-4e00d1b8f6ae4ccea04aecdb836bec02" target="_blank">Notion</a>
