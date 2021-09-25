@@ -48,4 +48,4 @@
 ----------------------------------------------------------------------------
 # 운영체제
 - 면접대비를 위한 운영체제 복습중
-- <a href="https://false-twill-cef.notion.site/Processes-and-threads-4e00d1b8f6ae4ccea04aecdb836bec02" target="_blank">Notion</a>
+- <a href="https://false-twill-cef.notion.site/f7bd7d80f98348b58a2cf21aa627c8b2" target="_blank">Notion</a>
